@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-espresso: #0C0A08;
+    --color-espresso-subtle: #14110E;
+    --color-espresso-card: #1A1512;
+    --color-espresso-elevated: #241D18;
+    --color-gold: #D4AF37;
+    --color-gold-light: #F3E5AB;
+    --color-gold-dark: #997A2E;
+    --color-parchment: #FAF7F2;
+    --color-taupe: #A89F91;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0C0A08;
+    color: #FAF7F2;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-mono-tech {
+    font-family: 'Space Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom luxury gradients and effects */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #DFBE6C 0%, #D4AF37 50%, #997A2E 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0BD 0%, #D4AF37 50%, #AA8232 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #D1D5DB 60%, #9CA3AF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+.border-gold-bright {
+  border-color: rgba(212, 175, 55, 0.55);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.18);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.28);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0C0A08;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A221C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}

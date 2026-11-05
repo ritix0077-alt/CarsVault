@@ -1,0 +1,6 @@
+{
+  "name": "AURELIA | Grand Marques Automotive Anthology",
+  "description": "An ultra-luxury automotive archive showcasing iconic models from Honda, Porsche, Ferrari, Aston Martin, and Lamborghini with precision engineering specifications, sound telemetry, and comparison suites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
